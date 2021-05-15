@@ -1,0 +1,45 @@
+//- index.pug
+doctype html
+html
+  head
+    title University of engineering and management
+    style
+      include ../static/style.css
+  body
+      nav#navbar
+          ul
+              div#logo
+                   img(src ="/static/images/logo.png")
+              li #[a(href="/") Home]
+              li #[a(href="/") About Us]
+              li #[a(href="/") Contact Us]  
+      section#introsection
+           
+      section#placements
+            h2  Welcome To Uem Kolkata 
+            div.card
+                img(src ="/static/images/vc.jpg")
+            div.card
+                img(src ="/static/images/modi.jpg")
+            div.card
+                img(src ="/static/images/desc.jpg")
+       
+
+      section#companies
+            h2  Companies visited
+            div#visit
+                img(src="/static/images/capge.png", alt = "companies" ,class="capgeimage")
+                img(src="/static/images/concen.png", alt = "companies" ,class="capgeimage")
+                img(src="/static/images/wipro.png", alt = "companies" ,class="capgeimage")
+                img(src="/static/images/info.png", alt = "companies" ,class="capgeimage")
+                img(src="/static/images/tcs.png", alt = "companies" ,class="capgeimage")
+                img(src="/static/images/deo.png", alt = "companies" ,class="capgeimage")
+                img(src="/static/images/buy.jpg", alt = "companies" ,class="capgeimage")
+                img(src="/static/images/digital.png", alt = "companies" ,class="capgeimage")
+                img(src="/static/images/amazon.png", alt = "companies" ,class="capgeimage")
+                img(src="/static/images/Lt.png", alt = "companies" ,class="capgeimage")
+                img(src="/static/images/keer.png", alt = "companies" ,class="capgeimage")
+      footer#footer
+          | Copyright Uem kolkata
+      script
+        include ../static/index.js

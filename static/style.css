@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+body{
+    display: flex;
+    flex-direction: column;
+   
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-right: 34rem;
+}
+#logo img{
+    height: 2.625rem;
+}
+#navbar ul{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    /*justify-content: center;*/
+}
+#navbar li{
+     list-style: none ;
+
+}
+.card img{
+    height: 22rem;
+    padding: 1.5rem;
+    margin-left: 1.93rem;
+}
+.card{
+    display: flex;
+    padding-top: 2rem;
+}
+
+.card2{
+    border: 2px solid black;
+    border-radius: 0.6rem;
+    width: 23%;
+    margin: 2rem 3.652rem;
+    height: 13rem;
+    display: inline-block;
+    padding-left: 0px;
+    margin-right:  4.8rem;
+    padding: 2rem;
+    background-color: aquamarine;
+}
+
+#navbar li a{
+    text-decoration: none;
+    padding: 2rem 1.8rem;
+    font-size: 1.3rem;
+}
+#navbar li a:hover{
+   color: white;
+}
+#introsection{
+    padding-bottom: 30rem;
+    color :yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5rem;
+    background: center / cover no-repeat url("/static/br.jpeg");
+    height: 38rem;
+    background-color: red;
+    width: 100%;
+    
+}
+
+#companies{
+    height: 21rem;
+    background-color: whitesmoke;
+    
+}
+#approvals{
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    height: 68rem;
+    justify-content: center;
+    align-items: center;
+    background: lightcyan;
+}
+#approvals h2{
+    font-family: 'Oxygen', sans-serif;
+    padding-top: 0.81rem;
+    padding-bottom: 2.3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: red;
+    background: bisque;
+}
+.approvalimage{
+    height: 10rem;
+    padding-right: 9rem;
+    margin-top: 2rem;
+}
+.approvalimage2{
+    height: 44rem;
+    padding-right: 9rem;
+}
+.approvalcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px
+}
+.approvalcont2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.capgeimage{
+    height: 4.87rem;
+    margin-right: 3.125rem;
+    
+}
+
+#visit{
+    height: 7.5rem;
+    margin: auto;
+    display: inline-flex;
+    margin-left: 2rem;
+    padding-top: 4.5rem;
+}
+#footer{
+    height: 30rem;
+    background-color: wheat;
+    text-align: center;  
+    position: sticky;
+   
+}
+.SecondLayer{
+    display: flex;
+   padding: 3rem;
+    height:30rem
+}
+.FirstLayer{
+    height: 30rem;
+}
+.innerFirst li{
+    display: grid;
+}
+.innerFirst li a {
+    padding: 1rem;
+    text-decoration: none;
+}
+.innerFirst li :hover{
+    background-color: green;
+}
+.innerSecond li :hover{
+    background-color: green;
+}
+.innerThird li :hover{
+    background-color: green;
+}
+.innerFourth li :hover{
+    background-color: green;
+}
+.innerSecond{
+    padding-left: 6rem ;
+}
+.innerSecond li{
+    display: grid;
+    
+}
+.innerSecond li a{
+    padding: 1rem;
+    text-decoration: none;
+}
+.innerThird
+{
+    padding-left: 6rem;
+}
+.innerThird li{
+    display: grid;
+    
+}
+.innerThird li a{
+    padding: 1rem;
+    text-decoration: none;
+}
+.innerFourth
+{
+    padding-left: 6rem;
+}
+.innerFourth li{
+    display: grid;
+   
+}
+.innerFourth li a{
+    padding: 1rem;
+    text-decoration: none;
+}
+
+
+#navbar{
+    background-color:black;
+    padding: 0.8rem 0.9rem;
+    font-family: 'Oxygen', sans-serif;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+#navbar ul li a{
+    color: red;   
+}
+
+#placements{
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    height: 38rem;
+    justify-content: center;
+    align-items: center;
+    background: lightcyan;
+   
+ }
+
+ #morals{
+    height: 52rem;
+    background-color:none;
+    align-items: center;
+    justify-content: center;
+   background: center / cover no-repeat url("/static/bg.png");
+    
+}
+#morals h2{
+    font-family: 'Oxygen', sans-serif;
+    padding-top: 0.81rem;
+    padding-bottom: 2.3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: red;
+    background: bisque;
+    
+}
+ #placements h2{
+    padding-top: 1.1rem;
+    padding-bottom: 2.3rem;
+    color: blueviolet;
+    font-size: 1.8rem;
+    background-color: beige;
+
+ }
+ .moralflex{
+     display: flex;
+     margin-top: 4rem;
+     justify-content: center;
+     align-items: center;
+ }
+ .moralflex2{
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+ }
+
+#companies h2{
+    font-family: 'Oxygen', sans-serif;
+    padding-top: 0.81rem;
+    padding-bottom: 2.3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: red;
+    background: pink;
+
+}
+#approvals h1
+{
+padding-top: 15px;
+}
+.card2 h1{
+    color: red;
+}
+
+@media(min-width:1972px){
+    html{
+        font-size: 118%;
+   
+    }
+    
+}
+
+
+@media(min-width:449px){
+    html{
+        font-size: 57%;
+   
+    }
+    
+}
+@media(min-width:1001px){
+    html{
+        font-size: 58%;
+   
+    }
+    
+}
+@media(min-width:1031px){
+    html{
+        font-size: 60%;
+   
+    }
+    
+}
+@media(min-width:1060px){
+    html{
+        font-size: 62%;
+   
+    }
+    
+}
+@media(min-width:1093px){
+    html{
+        font-size: 64%;
+   
+    }
+    
+}
+@media(min-width:1134px){
+    html{
+        font-size: 66%;
+   
+    }
+    
+}
+@media(min-width:1172px){
+    html{
+        font-size: 69%;
+   
+    }
+    
+}
+@media(min-width:1226px){
+    html{
+        font-size: 71%;
+   
+    }
+    
+}
+@media(min-width:1264px){
+    html{
+        font-size: 73%;
+   
+    }
+    
+}
+@media(min-width:1297px){
+    html{
+        font-size: 75%;
+   
+    }
+    
+}
+@media(min-width:1343px){
+    html{
+        font-size: 77%;
+   
+    }
+    
+}
+@media(min-width:1364px){
+    html{
+        font-size: 79%;
+   
+    }
+    
+}
+@media(min-width:1432px){
+    html{
+        font-size: 83%;
+   
+    }
+    
+}
+@media(min-width:1465px){
+    html{
+        font-size: 85%;
+   
+    }
+    
+}
+@media(min-width:1507px){
+    html{
+        font-size: 87%;
+   
+    }
+    
+}@media(min-width:1557px){
+    html{
+        font-size: 90%;
+   
+    }
+    
+}
+@media(min-width:1595px){
+    html{
+        font-size: 92%;
+   
+    }
+    
+}
+@media(min-width:1641px){
+    html{
+        font-size: 95%;
+   
+    }
+    
+}
+@media(min-width:1695px){
+    html{
+        font-size: 98%;
+   
+    }
+    
+}
+@media(min-width:1762px){
+    html{
+        font-size: 101%;
+   
+    }
+    
+}
+@media(min-width:1800px){
+    html{
+        font-size: 103%;
+   
+    }
+    
+}
+@media(min-width:1837px){
+    html{
+        font-size: 107%;
+   
+    }
+    
+}
+@media(min-width:1916px){
+    html{
+        font-size: 110%;
+   
+    }
+    
+}
+
+
+@media(min-width:1946px){
+    html{
+        font-size: 115%;
+   
+    }
+    
+}
+@media(min-width:2030px){
+    html{
+        font-size: 120%;
+   
+    }
+    
+}
+@media(min-width:2118px){
+    html{
+        font-size: 125%;
+   
+    }
+    
+}
+@media(min-width:2169px){
+    html{
+        font-size: 128%;
+   
+    }
+    
+}
+@media(min-width:2211px){
+    html{
+        font-size: 130%;
+   
+    }
+    
+}
+@media(min-width:2274px){
+    html{
+        font-size: 133%;
+   
+    }
+    
+}
+@media(min-width:2295px){
+    html{
+        font-size: 135%;
+   
+    }
+    
+}
+@media(min-width:2354px){
+    html{
+        font-size: 137%;
+   
+    }
+    
+}
+@media(min-width:2383px){
+    html{
+        font-size: 139%;
+   
+    }
+    
+}
+@media(min-width:2442px){
+    html{
+        font-size: 143%;
+   
+    }
+    
+}
+@media(min-width:2508px){
+    html{
+        font-size: 148%;
+   
+    }
+    
+}
+@media(min-width:2508px){
+    html{
+        font-size: 150%;
+   
+    }
+    
+}
+@media(min-width:2583px){
+    html{
+        font-size: 152%;
+   
+    }
+    
+}
+@media(min-width:2604px){
+    html{
+        font-size: 154%;
+   
+    }
+    
+}
+@media(min-width:2683px){
+    html{
+        font-size: 156%;
+   
+    }
+    
+}
+@media(min-width:2717px){
+    html{
+        font-size: 159%;
+   
+    }
+    
+}
+
+
+
+
+
+@media(min-width:2750px){
+    html{
+        font-size: 160%;
+      
+   
+    }
+    
+}
+
+
+
