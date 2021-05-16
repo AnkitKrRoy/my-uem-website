@@ -4,7 +4,7 @@ const app = express();
 //const mongoose = require('mongoose');
 //const bodyparser =require("body-parser")
 //mongoose.connect('mongodb://localhost/Uemdatabase', {useNewUrlParser: true, useUnifiedTopology: true});
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 /*const uemschema = new mongoose.Schema({
     name: String,
