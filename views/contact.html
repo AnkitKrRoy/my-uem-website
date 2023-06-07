@@ -70,45 +70,32 @@ rel="stylesheet"
 <!-- Navbar -->
  
 
-<div class="container">
 
-  <form target="_blank" action="https://formsubmit.co/youremail@gmail.com" method="POST">
 
-    <div class="form-group">
-
-      <div class="form-row">
-
-        <div class="col">
-
-          <input type="text" name="name" class="form-control" placeholder="Nama Lengkap" required>
-
-        </div>
-
-        <div class="col">
-
-          <input type="email" name="email" class="form-control" placeholder="Alamat email" required>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="form-group">
-
-      <textarea placeholder="Pesan Anda" class="form-control" name="message" rows="10" required></textarea>
-
-    </div>
-
-    <button type="submit" class="btn btn-lg btn-dark btn-block">Kirim</button>
-
+<div class="card mx-auto" style="align-items: center; background-image: url('../static/contact_bg.jpg') ;">
+  
+  <div class="contact-us">
+    <form action="contact" method="post">
+    <label for="customerName">NAME <em>&#x2a;</em></label>
+    <input id="customerName" name="name" required="" type="text" />
+    <label for="customerEmail">EMAIL <em>&#x2a;</em></label>
+    <input id="customerEmail" name="email" required="" type="email" />
+    <label for="customerPhone">PHONE</label>
+    <input id="customerPhone" name="phone" type="phone" />
+    <label for="orderNumber">ADDRESS</label>
+    <input id="orderNumber" name="address" type="text" />
+    <label for="customerNote">DESC <em>&#x2a;</em></label>
+    <input id="customerPhone" name="desc" type="text" />
+    
+    <label for="spamProtection">SPAM PROTECTION <em>&#x2a; </em><span>&nbsp;&nbsp;&nbsp;&nbsp;What day comes before July 11th?</span></label>
+    <input id="spamProtection" name="spamProtection" type="text" />
+    <button id="customerOrder">SUBMIT</button>
   </form>
-
+ </div>
 </div>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-
-
+    
+ 
 
 
 <!-- Footer -->
