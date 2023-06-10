@@ -20,7 +20,9 @@ rel="stylesheet"
 <script
   type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"
-></script>
+>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 <link rel="stylesheet" href="../static/style.css" >
 <link rel="stylesheet" href="../static/footer.css" >
 
@@ -38,7 +40,7 @@ rel="stylesheet"
     <!-- Toggle button -->
     <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
       data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
+      aria-expanded="false" aria-label="Toggle navigation" >
       <i class="fas fa-bars"></i>
     </button>
 
@@ -52,7 +54,7 @@ rel="stylesheet"
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#" >Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about">About</a>
@@ -130,26 +132,26 @@ rel="stylesheet"
 
   <div class="card" style="background-color: lavender; margin-bottom: 40px;">
     
-    <div class="card-header " style="    background: aquamarine;">
-      <h2 class="card-title " style="text-align: center; ">Welcome to Uem Kolkata</h2>
+    <div class="card-header " style="    background: aquamarine;font-family: 'Cedarville Cursive', cursive;">
+      <h1 class="card-title " style="text-align: center; "> Welcome to Uem Kolkata <img width="45" height="45" src="../static/images/college_favicon.png" alt="book"/></h1>
     </div>
     <div class="card-body">
       
       <p class="card-text" > 
         <ol>
-          <li style="font-family: 'Cedarville Cursive', cursive;">
+          <li style="font-family: 'Cedarville Cursive', cursive; font-size: 20px;">
             UEM Kolkata has won <strong>“AAA” category</strong> (first 10 institutes nationally among all institutes of India including all IITs and NITs) in NPTEL program (IIT Kharagpur and IIT Chennai)
           </li >
-          <li style="font-family: 'Cedarville Cursive', cursive;">
+          <li style="font-family: 'Cedarville Cursive', cursive; font-size: 20px;">
             UEM Kolkata student has stood 1st amongst all students of India in <strong> NPTEL program</strong>
           </li>
-          <li style="font-family: 'Cedarville Cursive', cursive;"">
+          <li style="font-family: 'Cedarville Cursive', cursive;font-size: 20px;">
             UEM Kolkata and UEM Jaipur organized UEMCON-2016 in Columbia University, New York, USA in association with <strong>IEEE New York, IEEE USA and IEEE Region 1</strong>
           </li>
-          <li style="font-family: 'Cedarville Cursive', cursive;">
+          <li style="font-family: 'Cedarville Cursive', cursive;font-size: 20px;">
             UEMK has been recognised in the band “Performer” under the category <strong>“University & Deemed to be University (Private/Self Financed) (Technical)”</strong> in ATAL RANKING OF INSTITUTIONS ON INNOVATION ACHIEVEMENTS (ARIIA) 2021, a flagship program of the Ministry of Education, Government of India.
           </li>
-          <li style="font-family: 'Cedarville Cursive', cursive;">
+          <li style="font-family: 'Cedarville Cursive', cursive;font-size: 20px;">
             The University is a partner institution in the prestigious European Union sponsored project <strong> ‘FRACTION’ & ‘UNNAT BHARAT ABHIYAAN’ </strong> of Govt. of India.
           </li>
         </ol>
@@ -158,11 +160,11 @@ rel="stylesheet"
   </div>
 
 
-  <div class="card mx-auto" style="text-align: center; margin-top: 10px; background-color: aliceblue; width: 80%;">
+  <div class="card mx-auto" style="text-align: center; margin-top: 10px; background-color: aliceblue; width: 85%;">
        <div class="card-header">
-      <button type="button" class="btn btn-success col-lg-2" >Enquiry</button>
-<button type="button" class="btn btn-danger col-lg-2"  >Admission</button>
-<button type="button" class="btn btn-warning col-lg-2">Placements</button>
+      <button type="button" onclick="location.href='contact'" class="btn btn-success col-lg-2 ms-lg-3"  >Enquiry</button>
+<button type="button" class="btn btn-danger col-lg-2 ms-lg-3"  >Admission</button>
+<button type="button" class="btn btn-warning col-lg-2 ms-lg-3">Placements</button>
         </div>
 
 <div class="card-body" > 
@@ -251,17 +253,27 @@ rel="stylesheet"
 </div>
 
 
-<div class="card h-25 mx-auto" style="margin-top: 40px; width: 90%; margin-bottom: 40px;">
 
-  <div class="card-header" style="text-align: center;     background: aqua;"> <strong><h2>Top Recruiters</h2></strong></div>
+
+<div class="container">
+<div class="card  mx-auto" style="margin-top: 40px;  margin-bottom: 40px;">
+
+  <div class="card-header" style="font-family: 'Cedarville Cursive', cursive; text-align: center; background-color: aqua;"><h1>Top Recuiters <img width="45" height="45" src="../static/images/hiring_favicon.png" alt="book"/></h1> 
+    
+  </div>
+   
   <div class="card-body" style="    background: azure;">
+    <div class="card mx-auto" style="margin-bottom: 20px;">
+      
+    <img src="../static/images/placements.jpg" />
+  </div>
 <div class="row row-cols-1 row-cols-md-3 g-4">
 
   <div class="col">
     <div class="card h-100">
       <img src="../static/images/amazon.png" class="card-img-top" alt="Skyscrapers"/>
       <div class="card-body" style="    background: antiquewhite;">
-        <h5 class="card-title">Amazon</h5>
+        <h4 class="card-title">Amazon</h4>
         <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">
           Amazon.com, Inc. is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.
         </p>
@@ -272,7 +284,7 @@ rel="stylesheet"
     <div class="card h-100">
       <img src="../static/images/Cogni.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
       <div class="card-body" style="background: cornsilk;">
-        <h5 class="card-title">Cognizant Technology Solutions</h5>
+        <h4 class="card-title">Cognizant Technology Solutions</h4>
         <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">Cognizant is an American multinational information technology services and consulting company. It is headquartered in Teaneck, New Jersey, U.S. Cognizant is part of the NASDAQ-100 and trades under CTSH.</p>
       </div>
      
@@ -282,7 +294,7 @@ rel="stylesheet"
     <div class="card h-100">
       <img src="../static/images/ibm.png" class="card-img-top" alt="Palm Springs Road"/>
       <div class="card-body "style="background: lavender;" >
-        <h5 class="card-title">IBM</h5>
+        <h4 class="card-title">IBM</h4>
         <p class="card-text " style="font-family: 'Cedarville Cursive', cursive;">
           The International Business Machines Corporation, nicknamed Big Blue, is an American multinational technology corporation headquartered in Armonk, New York and present in over 175 countries
         </p>
@@ -299,7 +311,7 @@ rel="stylesheet"
     <div class="card h-100">
       <img src="../static/images/concen.png" class="card-img-top" alt="Skyscrapers"/>
       <div class="card-body" style="background: honeydew;">
-        <h5 class="card-title">Concentrix</h5>
+        <h4 class="card-title">Concentrix</h4>
         <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">
           Concentrix is an American business services company specializing in customer engagement and business performance
         </p>
@@ -311,7 +323,7 @@ rel="stylesheet"
     <div class="card h-100">
       <img src="../static/images/wipro.png" class="card-img-top" alt="Los Angeles Skyscrapers" />
       <div class="card-body" style="background: aliceblue;">
-        <h5 class="card-title" style="font-family: 'Cedarville Cursive', cursive;">Wipro</h5>
+        <h4 class="card-title" style="font-family: 'Cedarville Cursive', cursive;">Wipro</h4>
         <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;" >Wipro is an Indian multinational corporation that provides information technology, consultant and business process services. It is one of the leading Big Tech companies.</p>
       </div>
      
@@ -321,7 +333,7 @@ rel="stylesheet"
     <div class="card h-100">
       <img src="../static/images/tcs_new.jpg" class="card-img-top" alt="Palm Springs Road"/>
       <div class="card-body" style="background: cornsilk;">
-        <h5 class="card-title">Tata Consultancy Services</h5>
+        <h4 class="card-title">Tata Consultancy Services</h4>
         <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">
           Tata Consultancy Services is an Indian multinational information technology services and consulting company with its headquarters in Mumbai, Maharashtra
         </p>
@@ -334,11 +346,23 @@ rel="stylesheet"
 </div>
 </div>
 </div>
+  </div>
+
+
+<div class="card mx-auto" style="align-items: center; width: 90%; background: url('../static/images/placement_stats.avif'); margin-bottom: 40px;">
+  <div class="card-header" >
+    <h1 style="font-family: 'Cedarville Cursive', cursive;">Placement Stats 2022 <img width="45" height="45" src="../static/images/bar-graph.png" alt="book"/> </h1>
+  </div>
   
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+</div>
+
+
 
 <div class="card mx-auto" style="width: 80%; margin-bottom: 40px;">
   <div class="card-header" style="text-align: center;     background: chartreuse;">
-    <h2 style=" font-family: 'Geologica', sans-serif; ">Important Links !!! </h2>
+    <h1 style="font-family: 'Cedarville Cursive', cursive; color: red;">!!! Important Links !!! <img width="45" height="45" src="../static/images/important_favicon.png" alt="book"/> </h1> 
   </div>
   <div class="card-body">
     <div class="list-group list-group-light">
@@ -350,6 +374,8 @@ rel="stylesheet"
     </div>
   </div>
 </div>
+
+
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted ">
@@ -477,6 +503,28 @@ rel="stylesheet"
 
 
     <script>
+      var xValues = ["TCS", "CTS", "WIPRO", "CAPGEMINI", "IBM"];
+var yValues = [55, 80, 44, 24, 15];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: ""
+    }
+  }
+});
+
       $(function () {
           $(document).scroll(function () {
               var $nav = $("#mainNavbar");
