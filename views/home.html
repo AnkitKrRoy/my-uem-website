@@ -1,539 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Font Awesome -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link
-href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-rel="stylesheet"
-/>
-<!-- MDB -->
-<link
-href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
-rel="stylesheet"
-/>
-<!-- MDB -->
-<script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"
->
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-<link rel="stylesheet" href="../static/style.css" >
-<link rel="stylesheet" href="../static/footer.css" >
 
-<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UEM</title>
+<head>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="../static/style.css">
+  <link rel="stylesheet" href="../static/footer.css">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UEM</title>
 </head>
 
 <body>
   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- Container wrapper -->
-  <div class="container-fluid">
-    <!-- Toggle button -->
-    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-      data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation" >
-      <i class="fas fa-bars"></i>
-    </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
 
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Navbar brand -->
-      <a class="navbar-brand mt-2 mt-lg-0" href="#">
-        <img src="../static/UEM_Logo.jpg" height="30"
-          alt="MDB Logo" loading="lazy" />
-      </a>
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="#" >Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact">Contact</a>
-        </li>
-      </ul>
-      <!-- Left links -->
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img src="../static/UEM_Logo.jpg" height="30" alt="MDB Logo" loading="lazy" />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact">Contact</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+
+
     </div>
-    <!-- Collapsible wrapper -->
-
-   
-  </div>
-  <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->
-  <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel" >
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+  <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
     <!-- Indicators -->
     <div class="carousel-indicators">
-      <button
-        type="button"
-        data-mdb-target="#carouselBasicExample"
-        data-mdb-slide-to="0"
-        class="active"
-        aria-current="true"
-        aria-label="Slide 1"
-      ></button>
-      <button
-        type="button"
-        data-mdb-target="#carouselBasicExample"
-        data-mdb-slide-to="1"
-        aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-mdb-target="#carouselBasicExample"
-        data-mdb-slide-to="2"
-        aria-label="Slide 3"
-      ></button>
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
     </div>
-  
+
     <!-- Inner -->
     <div class="carousel-inner">
       <!-- Single item -->
       <div class="carousel-item active">
-        <img src="../static/images/UEM,_Kolkata.jpg" class="d-block w-100" alt="Sunset Over the City"/>
-        
-      </div>
-  
-      <!-- Single item -->
-      <div class="carousel-item">
-        <img src="../static/br.jpeg" class="d-block w-100" alt="Canyon at Nigh"/>
-        
-      </div>
-  
-      <!-- Single item -->
-      <div class="carousel-item">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100" alt="Cliff Above a Stormy Sea"/>
-        
-      
-    </div>
-    <!-- Inner -->
-  
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+        <img src="../static/images/collage_pic_1.jpg"  class="d-block w-100" alt="Sunset Over the City" />
 
-  <div class="card" style="background-color: lavender; margin-bottom: 40px;">
-    
-    <div class="card-header " style="    background: aquamarine;font-family: 'Cedarville Cursive', cursive;">
-      <h1 class="card-title " style="text-align: center; "> Welcome to Uem Kolkata <img width="45" height="45" src="../static/images/college_favicon.png" alt="book"/></h1>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="../static/images/collage_pic_2.jpg" class="d-block w-100" alt="Canyon at Nigh" />
+
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <img src="../static/images/collage_pic_3.jpg" class="d-block w-100"
+          alt="Cliff Above a Stormy Sea" />
+
+
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="card-body">
-      
-      <p class="card-text" > 
+
+    <div class="card" style="background-color: lavender; margin-bottom: 40px;">
+
+      <div class="card-header " style="    background: aquamarine;font-family: 'Cedarville Cursive', cursive;">
+        <h1 class="card-title " style="text-align: center; "> Welcome to Uem Kolkata <img width="45" height="45"
+            style="margin-bottom: 10px;" src="../static/images/college_favicon.png" alt="book" /></h1>
+      </div>
+      <div class="card-body">
+
+        <p class="card-text">
         <ol>
-          <li style="font-family: 'Cedarville Cursive', cursive; font-size: 20px;">
-            UEM Kolkata has won <strong>“AAA” category</strong> (first 10 institutes nationally among all institutes of India including all IITs and NITs) in NPTEL program (IIT Kharagpur and IIT Chennai)
-          </li >
-          <li style="font-family: 'Cedarville Cursive', cursive; font-size: 20px;">
+          <li style="font-family: 'Cedarville Cursive', cursive; font-size: 18px;">
+            UEM Kolkata has won <strong>“AAA” category</strong> (first 10 institutes nationally among all institutes of
+            India including all IITs and NITs) in NPTEL program (IIT Kharagpur and IIT Chennai)
+          </li>
+          <li style="font-family: 'Cedarville Cursive', cursive; font-size: 18px;">
             UEM Kolkata student has stood 1st amongst all students of India in <strong> NPTEL program</strong>
           </li>
-          <li style="font-family: 'Cedarville Cursive', cursive;font-size: 20px;">
-            UEM Kolkata and UEM Jaipur organized UEMCON-2016 in Columbia University, New York, USA in association with <strong>IEEE New York, IEEE USA and IEEE Region 1</strong>
+          <li style="font-family: 'Cedarville Cursive', cursive;font-size: 18px;">
+            UEM Kolkata and UEM Jaipur organized UEMCON-2016 in Columbia University, New York, USA in association with
+            <strong>IEEE New York, IEEE USA and IEEE Region 1</strong>
           </li>
-          <li style="font-family: 'Cedarville Cursive', cursive;font-size: 20px;">
-            UEMK has been recognised in the band “Performer” under the category <strong>“University & Deemed to be University (Private/Self Financed) (Technical)”</strong> in ATAL RANKING OF INSTITUTIONS ON INNOVATION ACHIEVEMENTS (ARIIA) 2021, a flagship program of the Ministry of Education, Government of India.
+          <li style="font-family: 'Cedarville Cursive', cursive;font-size: 18px;">
+            UEMK has been recognised in the band “Performer” under the category <strong>“University & Deemed to be
+              University (Private/Self Financed) (Technical)”</strong> in ATAL RANKING OF INSTITUTIONS ON INNOVATION
+            ACHIEVEMENTS (ARIIA) 2021, a flagship program of the Ministry of Education, Government of India.
           </li>
-          <li style="font-family: 'Cedarville Cursive', cursive;font-size: 20px;">
-            The University is a partner institution in the prestigious European Union sponsored project <strong> ‘FRACTION’ & ‘UNNAT BHARAT ABHIYAAN’ </strong> of Govt. of India.
+          <li style="font-family: 'Cedarville Cursive', cursive;font-size: 18px;">
+            The University is a partner institution in the prestigious European Union sponsored project <strong>
+              ‘FRACTION’ & ‘UNNAT BHARAT ABHIYAAN’ </strong> of Govt. of India.
           </li>
         </ol>
-        
+
+      </div>
     </div>
-  </div>
 
 
-  <div class="card mx-auto" style="text-align: center; margin-top: 10px; background-color: aliceblue; width: 85%;">
-       <div class="card-header">
-      <button type="button" onclick="location.href='contact'" class="btn btn-success col-lg-2 ms-lg-3"  >Enquiry</button>
-<button type="button" class="btn btn-danger col-lg-2 ms-lg-3"  >Admission</button>
-<button type="button" class="btn btn-warning col-lg-2 ms-lg-3">Placements</button>
+    <div class="card mx-auto" style="text-align: center; margin-top: 10px; background-color: aliceblue; width: 85%;">
+      <div class="card-header">
+        <button type="button" onclick="location.href='contact'" class="btn btn-success col-lg-2 ms-lg-3">Enquiry
+        </button>
+        <button type="button" class="btn btn-danger col-lg-2 ms-lg-3">Admission</button>
+        <button type="button" class="btn btn-warning col-lg-2 ms-lg-3">Placements</button>
+      </div>
+
+      <div class="card-body">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button style="    background: antiquewhite;" class="accordion-button" type="button"
+                data-mdb-toggle="collapse" data-mdb-target="#collapseOne" aria-expanded="false"
+                aria-controls="collapseOne">
+                <h5 style="font-family: 'Cedarville Cursive', cursive; color: brown;"><strong>News And Press Releases <i
+                      class="fas fa-bell"></i></strong></h5>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+              data-mdb-parent="#accordionExample">
+              <div class="accordion-body"
+                style="font-family: 'Cedarville Cursive', cursive;     background: mintcream;">
+                <strong>This is the first item's accordion body.</strong> It is hidden by default,
+                until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and
+                hiding via CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that just about any HTML
+                can go within the <strong>.accordion-body</strong>, though the transition does
+                limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button style="    background: antiquewhite;" class="accordion-button collapsed" type="button"
+                data-mdb-toggle="collapse" data-mdb-target="#collapseTwo" aria-expanded="false"
+                aria-controls="collapseTwo">
+                <h5 style="font-family: 'Cedarville Cursive', cursive; color: brown;"><strong>About the Educational
+                    Group <i class="fa fa-info-circle" aria-hidden="true"></i></strong></h5>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-mdb-parent="#accordionExample">
+              <div class="accordion-body" style="font-family: 'Cedarville Cursive', cursive;    background: mintcream;">
+                <strong>This is the second item's accordion body.</strong> It is hidden by
+                default, until the collapse plugin adds the appropriate classes that we use to
+                style each element. These classes control the overall appearance, as well as the
+                showing and hiding via CSS transitions. You can modify any of this with custom CSS
+                or overriding our default variables. It's also worth noting that just about any
+                HTML can go within the <strong>.accordion-body</strong>, though the transition
+                does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button style="    background: antiquewhite;" class="accordion-button collapsed" type="button"
+                data-mdb-toggle="collapse" data-mdb-target="#collapseThree" aria-expanded="false"
+                aria-controls="collapseThree">
+                <h5 style="font-family: 'Cedarville Cursive', cursive; color: brown;"><strong>Recognition <i
+                      class="fas fa-award"></i></strong></h5>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-mdb-parent="#accordionExample">
+              <div class="accordion-body"
+                style="font-family: 'Cedarville Cursive', cursive;     background: mintcream;">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and
+                hiding via CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that just about any HTML
+                can go within the <strong>.accordion-body</strong>, though the transition does
+                limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container" style="margin-top: 40px; ">
+      <div class="card mx-auto" style="width: 85%;">
+        <div class="card-header" style="text-align: center; background-color:violet;">
+          <h1>WHY UEM? <img width="55" height="55" style="margin-bottom: 5px;" ; src="../static/images/heart.png"
+              alt="book" /></h1>
         </div>
 
-<div class="card-body" > 
-<div class="accordion" id="accordionExample" >
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button
-      style="    background: antiquewhite;"
-        class="accordion-button"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#collapseOne"
-        aria-expanded="false"
-        aria-controls="collapseOne"
-      >
-        <h5 style="font-family: 'Cedarville Cursive', cursive; color: brown;"><strong>News And Press Releases</strong></h5>
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
-      <div class="accordion-body" style="font-family: 'Cedarville Cursive', cursive;     background: mintcream;">
-        <strong>This is the first item's accordion body.</strong> It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or
-        overriding our default variables. It's also worth noting that just about any HTML
-        can go within the <strong>.accordion-body</strong>, though the transition does
-        limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button
-      style="    background: antiquewhite;"
-        class="accordion-button collapsed"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#collapseTwo"
-        aria-expanded="false"
-        aria-controls="collapseTwo"
-      >
-      <h5 style="font-family: 'Cedarville Cursive', cursive; color: brown;"><strong>About the Educational Group</strong></h5>
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-mdb-parent="#accordionExample">
-      <div class="accordion-body" style="font-family: 'Cedarville Cursive', cursive;    background: mintcream;">
-        <strong>This is the second item's accordion body.</strong> It is hidden by
-        default, until the collapse plugin adds the appropriate classes that we use to
-        style each element. These classes control the overall appearance, as well as the
-        showing and hiding via CSS transitions. You can modify any of this with custom CSS
-        or overriding our default variables. It's also worth noting that just about any
-        HTML can go within the <strong>.accordion-body</strong>, though the transition
-        does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button
-      style="    background: antiquewhite;"
-        class="accordion-button collapsed"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#collapseThree"
-        aria-expanded="false"
-        aria-controls="collapseThree"
-      >
-      <h5 style="font-family: 'Cedarville Cursive', cursive; color: brown;"><strong>Recognition</strong></h5>
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-mdb-parent="#accordionExample">
-      <div class="accordion-body" style="font-family: 'Cedarville Cursive', cursive;     background: mintcream;">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or
-        overriding our default variables. It's also worth noting that just about any HTML
-        can go within the <strong>.accordion-body</strong>, though the transition does
-        limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
-      </div>
-      
-</div>
+        <div class="card-body" style="text-align: center;">
 
-
-
-
-<div class="container">
-<div class="card  mx-auto" style="margin-top: 40px;  margin-bottom: 40px;">
-
-  <div class="card-header" style="font-family: 'Cedarville Cursive', cursive; text-align: center; background-color: aqua;"><h1>Top Recuiters <img width="45" height="45" src="../static/images/hiring_favicon.png" alt="book"/></h1> 
-    
-  </div>
-   
-  <div class="card-body" style="    background: azure;">
-    <div class="card mx-auto" style="margin-bottom: 20px;">
-      
-    <img src="../static/images/placements.jpg" />
-  </div>
-<div class="row row-cols-1 row-cols-md-3 g-4">
-
-  <div class="col">
-    <div class="card h-100">
-      <img src="../static/images/amazon.png" class="card-img-top" alt="Skyscrapers"/>
-      <div class="card-body" style="    background: antiquewhite;">
-        <h4 class="card-title">Amazon</h4>
-        <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">
-          Amazon.com, Inc. is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="../static/images/Cogni.jpg" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-      <div class="card-body" style="background: cornsilk;">
-        <h4 class="card-title">Cognizant Technology Solutions</h4>
-        <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">Cognizant is an American multinational information technology services and consulting company. It is headquartered in Teaneck, New Jersey, U.S. Cognizant is part of the NASDAQ-100 and trades under CTSH.</p>
-      </div>
-     
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="../static/images/ibm.png" class="card-img-top" alt="Palm Springs Road"/>
-      <div class="card-body "style="background: lavender;" >
-        <h4 class="card-title">IBM</h4>
-        <p class="card-text " style="font-family: 'Cedarville Cursive', cursive;">
-          The International Business Machines Corporation, nicknamed Big Blue, is an American multinational technology corporation headquartered in Armonk, New York and present in over 175 countries
-        </p>
-      </div>
-      
-    </div>
-  </div>
-
-
-</div>
-<div class="row row-cols-1 row-cols-md-3 g-4" style="padding-top: 20px;">
-
-  <div class="col">
-    <div class="card h-100">
-      <img src="../static/images/concen.png" class="card-img-top" alt="Skyscrapers"/>
-      <div class="card-body" style="background: honeydew;">
-        <h4 class="card-title">Concentrix</h4>
-        <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">
-          Concentrix is an American business services company specializing in customer engagement and business performance
-        </p>
-      </div>
-      
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="../static/images/wipro.png" class="card-img-top" alt="Los Angeles Skyscrapers" />
-      <div class="card-body" style="background: aliceblue;">
-        <h4 class="card-title" style="font-family: 'Cedarville Cursive', cursive;">Wipro</h4>
-        <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;" >Wipro is an Indian multinational corporation that provides information technology, consultant and business process services. It is one of the leading Big Tech companies.</p>
-      </div>
-     
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="../static/images/tcs_new.jpg" class="card-img-top" alt="Palm Springs Road"/>
-      <div class="card-body" style="background: cornsilk;">
-        <h4 class="card-title">Tata Consultancy Services</h4>
-        <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">
-          Tata Consultancy Services is an Indian multinational information technology services and consulting company with its headquarters in Mumbai, Maharashtra
-        </p>
-      </div>
-      
-    </div>
-  </div>
-
-
-</div>
-</div>
-</div>
-  </div>
-
-
-<div class="card mx-auto" style="align-items: center; width: 90%; background: url('../static/images/placement_stats.avif'); margin-bottom: 40px;">
-  <div class="card-header" >
-    <h1 style="font-family: 'Cedarville Cursive', cursive;">Placement Stats 2022 <img width="45" height="45" src="../static/images/bar-graph.png" alt="book"/> </h1>
-  </div>
-  
-  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
-
-</div>
-
-
-
-<div class="card mx-auto" style="width: 80%; margin-bottom: 40px;">
-  <div class="card-header" style="text-align: center;     background: chartreuse;">
-    <h1 style="font-family: 'Cedarville Cursive', cursive; color: red;">!!! Important Links !!! <img width="45" height="45" src="../static/images/important_favicon.png" alt="book"/> </h1> 
-  </div>
-  <div class="card-body">
-    <div class="list-group list-group-light">
-      <a href="https://uem.edu.in/uem-kolkata/news-events/national-seminar-and-exhibition-on-drones-and-uavs-2/" class="list-group-item list-group-item-action px-3 border-0 " aria-current="true" style="font-family: 'Cedarville Cursive', cursive;  ">
-        National Seminar and Exhibition on drones</a>
-      <a href="https://uem.edu.in/uem-kolkata/news-events/invited-talk-on-renewable-energy/" class="list-group-item list-group-item-action px-3 border-0" style="font-family: 'Cedarville Cursive', cursive;  ">Invited Talk on Renewable Energy</a>
-      <a href="https://uem.edu.in/uem-kolkata/news-events/inauguration-of-centenary-observatory/" class="list-group-item list-group-item-action px-3 border-0" style="font-family: 'Cedarville Cursive', cursive;  ">Centenary Observatory for Astronomical Research</a>
-      
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted ">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
-          </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
+          <P style="font-family: 'Cedarville Cursive', cursive;font-size: 20px;">UEM has offered 1-2 jobs for both
+            founding batch & current batch
+            Case Studies
+            Research based teaching
+            Support to Entrepreneurial ideas and ventures
+            Placement with best global companies
+            Highly qualified faculty members with strong industry experience
+            Focus on organizing Conferences, Seminars, Workshops and Colloquiums
+            Focus on Global Linkages
+            Pollution Free Campus
+            Business incubation centers and consulting exposure to students
+            Focus on Research, Development and Consulting
+            Integrated Libraries with 24X7 reading support
+            Good Background of publications in National and International Research Journals
+            Ragging Free Campus
+            Holistic Personality Development to imbibe positive attitude and social responsibility
+            International Exposure through visiting faculty from reputed foreign business schools / universities. Highly
+            evolved campus industry Interface
+            Spacious Seminar Hall
+            Life Skills Training (LST)
+            Focus on Holistic Development of students
+            Excellent Nationally and Internationally acclaimed faculty.
+            Ragging Report in UEM till date is NIL
+          </P>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-        </div>
-        <!-- Grid column -->
       </div>
-      <!-- Grid row -->
     </div>
-  </section>
-  <!-- Section: Links  -->
 
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2023 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">UEM KOLKATA </a>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
-    
+
+    <div class="container">
+      <div class="card  mx-auto" style="margin-top: 40px;  margin-bottom: 40px;">
+
+        <div class="card-header"
+          style="font-family: 'Cedarville Cursive', cursive; text-align: center; background-color: aqua;">
+          <h1>Top Recuiters <img width="45" height="45" src="../static/images/hiring_favicon.png" alt="book" /></h1>
+
+        </div>
+
+        <div class="card-body" style="    background: azure;">
+          <div class="card mx-auto" style="margin-bottom: 20px;">
+
+
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="../static/images/amazon.png" class="card-img-top" alt="Skyscrapers" />
+                <div class="card-body" style="    background: antiquewhite;">
+                  <h4 class="card-title">Amazon</h4>
+                  <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">
+                    Amazon.com, Inc. is an American multinational technology company focusing on e-commerce, cloud
+                    computing, online advertising, digital streaming, and artificial intelligence.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../static/images/Cogni.jpg" class="card-img-top" alt="Los Angeles Skyscrapers" />
+                <div class="card-body" style="background: cornsilk;">
+                  <h4 class="card-title">Cognizant Technology Solutions</h4>
+                  <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">Cognizant is an American
+                    multinational information technology services and consulting company. It is headquartered in
+                    Teaneck, New Jersey, U.S. Cognizant is part of the NASDAQ-100 and trades under CTSH.</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../static/images/ibm.png" class="card-img-top" alt="Palm Springs Road" />
+                <div class="card-body " style="background: lavender;">
+                  <h4 class="card-title">IBM</h4>
+                  <p class="card-text " style="font-family: 'Cedarville Cursive', cursive;">
+                    The International Business Machines Corporation, nicknamed Big Blue, is an American multinational
+                    technology corporation headquartered in Armonk, New York and present in over 175 countries
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-top: 20px;">
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="../static/images/concen.png" class="card-img-top" alt="Skyscrapers" />
+                <div class="card-body" style="background: honeydew;">
+                  <h4 class="card-title">Concentrix</h4>
+                  <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">
+                    Concentrix is an American business services company specializing in customer engagement and business
+                    performance
+                  </p>
+                </div>
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../static/images/wipro.png" class="card-img-top" alt="Los Angeles Skyscrapers" />
+                <div class="card-body" style="background: aliceblue;">
+                  <h4 class="card-title" style="font-family: 'Cedarville Cursive', cursive;">Wipro</h4>
+                  <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">Wipro is an Indian
+                    multinational corporation that provides information technology, consultant and business process
+                    services. It is one of the leading Big Tech companies.</p>
+                </div>
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../static/images/tcs_new.jpg" class="card-img-top" alt="Palm Springs Road" />
+                <div class="card-body" style="background: cornsilk;">
+                  <h4 class="card-title">Tata Consultancy Services</h4>
+                  <p class="card-text" style="font-family: 'Cedarville Cursive', cursive;">
+                    Tata Consultancy Services is an Indian multinational information technology services and consulting
+                    company with its headquarters in Mumbai, Maharashtra
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card mx-auto"
+      style="align-items: center; width: 90%; background: url('../static/images/placement_stats.avif'); margin-bottom: 40px;">
+      <div class="card-header">
+        <h1 style="font-family: 'Cedarville Cursive', cursive;">Placement Stats 2022 <img width="45" height="45"
+            style="margin-bottom: 15px;" src="../static/images/bar-graph.png" alt="book" /> </h1>
+      </div>
+
+      <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+    </div>
+
+
+
+    <div class="card mx-auto" style="width: 80%; margin-bottom: 40px;">
+      <div class="card-header" style="text-align: center;     background: chartreuse;">
+        <h1 style="font-family: 'Cedarville Cursive', cursive; color: red;">!!! Important Links !!! <img width="45"
+            height="45" style="margin-bottom: 10px;" src="../static/images/important_favicon.png" alt="book" /> </h1>
+      </div>
+      <div class="card-body">
+        <div class="list-group list-group-light">
+          <a href="https://uem.edu.in/uem-kolkata/news-events/national-seminar-and-exhibition-on-drones-and-uavs-2/"
+            class="list-group-item list-group-item-action px-3 border-0 " aria-current="true"
+            style="font-family: 'Cedarville Cursive', cursive;  ">
+            National Seminar and Exhibition on drones</a>
+          <a href="https://uem.edu.in/uem-kolkata/news-events/invited-talk-on-renewable-energy/"
+            class="list-group-item list-group-item-action px-3 border-0"
+            style="font-family: 'Cedarville Cursive', cursive;  ">Invited Talk on Renewable Energy</a>
+          <a href="https://uem.edu.in/uem-kolkata/news-events/inauguration-of-centenary-observatory/"
+            class="list-group-item list-group-item-action px-3 border-0"
+            style="font-family: 'Cedarville Cursive', cursive;  ">Centenary Observatory for Astronomical Research</a>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted ">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Company name
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">UEM KOLKATA </a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
 
 
     <script>
       var xValues = ["TCS", "CTS", "WIPRO", "CAPGEMINI", "IBM"];
-var yValues = [55, 80, 44, 24, 15];
-var barColors = ["red", "green","blue","orange","brown"];
+      var yValues = [55, 80, 44, 24, 15];
+      var barColors = ["red", "green", "blue", "orange", "brown"];
 
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    title: {
-      display: true,
-      text: ""
-    }
-  }
-});
+      new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+          }]
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: ""
+          }
+        }
+      });
 
       $(function () {
-          $(document).scroll(function () {
-              var $nav = $("#mainNavbar");
-              $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-          });
+        $(document).scroll(function () {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
       });
-  
-  </script>
-      
+
+    </script>
+
 </body>
 
 </html>
