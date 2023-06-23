@@ -17,9 +17,9 @@
     padding: 10%;
 }
 .how-section1 h4{
-    color: #ffa500;
+    color: chocolate;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
 }
 .how-section1 .subheading{
     color: #3931af;
@@ -36,3 +36,7 @@
 .how-img img{
     width: 45%;
 }
+body{
+    background:  #fbe3e8;
+  }
+  
