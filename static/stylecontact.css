@@ -9,7 +9,9 @@
   border-top: 10px solid #f45702;
 }
 
-label, input, textarea {
+label,
+input,
+textarea {
   display: block;
   width: 100%;
   font-size: 12pt;
@@ -38,7 +40,8 @@ em {
   font-weight: bold;
 }
 
-input, textarea {
+input,
+textarea {
   border: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
@@ -47,7 +50,8 @@ input, textarea {
   outline: none;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border: 1px solid #6bd4b1;
 }
 
@@ -68,6 +72,7 @@ button {
   border-bottom: 2px solid transparent;
   outline: none;
 }
+
 button:hover {
   background: inherit;
   color: #f45702;
