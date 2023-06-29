@@ -3,6 +3,7 @@ var cons = require('consolidate');
 const path = require("path");
 const app = express();
 const mongoose = require('mongoose');
+const { Session } = require("inspector");
 mongoose.connect('mongodb://localhost/Uemdatabase', {useNewUrlParser: true, useUnifiedTopology: true});
 const port = process.env.PORT || 8000;
 
@@ -45,10 +46,12 @@ app.get('/about' , (req ,res)=>{
 app.post('/contact' , (req ,res)=>{
     var mydata = new uem(req.body);
     mydata.save().then(()=>{
-        res.send(" saved into the database ..... Thanks for filling")
+        //res.send(" saved into the database ..... Thanks for filling")
+        res.status(200).render('success.html')
 
     }).catch(()=>{
-        res.status(400).send("Not inserted into the database")
+        res.status(400).render('error.html')
+        
     });
     //res.status(200).render('contact.pug' )
 })
