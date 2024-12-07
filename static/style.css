@@ -3,3 +3,7 @@
     linear-gradient(to top right, #99749D, #99749D, #B895AB, #CC9AA6, #D7969E, #ED8687, #ED8687);
   ;
 } */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
